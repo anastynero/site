@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Главная</title>
+<link rel="icon" type="image/png" href="book.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="script.js" defer></script>
+<link rel="stylesheet" type='text/css' href="hystModal-0.4/dist/hystmodal.min.js">
+<ul class="menu-main">
+  
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="catalog.html">Каталог</a></li>
+  <li><a href="want_read.html">Хочу прочитать</a></li>
+  <li><a href="profile1.html" class="current">Профиль</a></li>
+  
+</ul>
+</head>
+<body>
+    
+    
+    <div class="hystmodal hystmodal--simple" id="modalForms" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+                <button class="hystmodal__close" data-hystclose>Закрыть</button>
+                <div class="hystmodal__styled">
+                    <div class="loginblock__h1">Регистрация</div>
+                    <form action="#" method="POST">
+                        <div class="formitem">
+                            <input type="text" name="username" placeholder="Логин" value="">
+                        </div>
+                        <div class="formitem">
+                            <input type="email" name="username" placeholder="E-mail" value="">
+                        </div>
+                        <div class="formitem">
+                            <input type="password" name="username" placeholder="Пароль" value="">
+                        </div>
+                        <div class="loginblock__bottom flexi">
+                            <label class="formcheckbox">
+                                <input type="checkbox" name="remember" tabindex="0">
+                                <span class="flexi"><i class="checkplace"><img src="https://addmorescripts.github.io/hystModal/img/check.svg" alt=""></i>Заопмнить меня</span>
+                            </label>
+                            <a href="#" class="loginblock__link">Забыли пароль?</a>
+                        </div>
+                        <div class="formsubmit">
+                            <button type="submit" class="button" onclick="alert('Вы были успешно загеристрированы!'); return false;">Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="main.js"></script>
+      <script src="hystModal-0.4/dist/hystmodal.min.js"></script>
+    </body>
+    </html>
